@@ -31,6 +31,7 @@ def run():
         Route_2= st.selectbox('Route 2', ['None','DEL', 'IXR ', 'LKO ', 'NAG ', 'BLR', 'BOM ', 'BLR ', 'CCU','AMD ', 'PNQ ', 'CCU ', 'COK ', 'IDR ', 'GAU ', 'MAA ', 'HYD ','COK', 'DEL ', 'HYD', 'BHO ', 'JAI ', 'ATQ ', 'JDH ', 'BBI ','GOI ', 'BDQ ', 'TRV ', 'IXU ', 'IXB ', 'UDR ', 'RPR ', 'DED ','VGA ', 'VNS ', 'IXC ', 'PAT ', 'JLR ', 'KNU ', 'GWL ', 'VTZ ','NDC ', 'IXZ ', 'HBX ', 'IXA ', 'STV '])
         Route_3= st.selectbox('Route 3', ['None','BBI ', 'BOM ', 'BLR', 'DEL', 'COK', 'DEL ', 'AMD ', 'HYD','JDH ', 'MAA ', 'COK ', 'GOI ', 'NAG ', 'GAU ', 'BHO ', 'IXR ','IDR ', 'ISK ', 'HYD ', 'VGA ', 'PNQ ', 'JAI ', 'TRV ', 'HBX ','IMF ', 'CCU ', 'UDR ', 'VTZ ', 'IXC '])
         Route_4= st.selectbox('Route 4', ['None','BLR', 'COK', 'DEL', 'BOM ', 'HYD', 'DEL ', 'HYD ', 'GWL ','TRV ', 'BBI ', 'BHO ', 'AMD ', 'NAG '])
+        Route_5= st.selectbox('Route 5', ['None','COK', 'BLR', 'DEL', 'HYD', 'VGA '])
         Additional_Info = st.selectbox('Additional Info', ['No info','In-flight meal not included','No check-in baggage included','1 Long layover','Change airports','Business class','2 Long layover','Red-eye flight','1 Short layover'])
         Date = st.number_input('Date',  min_value=1, max_value=31, value=1)
         Month = st.number_input('Month', min_value=1, max_value=12, value=1)
