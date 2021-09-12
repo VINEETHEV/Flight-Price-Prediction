@@ -43,7 +43,7 @@ def run():
         Duration_Hour = st.number_input('Duration hour', min_value=0, max_value=23, value=12)
         Duration_Minute =st.number_input('Duration Minute', min_value=0, max_value=60, value=10)
         output=""
-        input_dict={'Airline':Airline,'Source':Source,'Destination':Destination,'Total_Stops':Total_Stops,'Route_1':Route_1,'Route_2':Route_2,'Route_3':Route_3,'Route_4':Route_4,'Additional_Info':Additional_Info,'Date':Date,'Month':Month,'Year':Year,'Departure_Hour':Departure_Hour,'Departure_Minute':Departure_Minute,'Arrival_Hour':Arrival_Hour,'Arrival_Minute':Arrival_Minute,'Duration_Hour':Duration_Hour,'Duration_Minute':Duration_Minute}
+        input_dict={'Airline':Airline,'Source':Source,'Destination':Destination,'Total_Stops':Total_Stops,'Route_1':Route_1,'Route_2':Route_2,'Route_3':Route_3,'Route_4':Route_4,'Route_5':Route_5,'Additional_Info':Additional_Info,'Date':Date,'Month':Month,'Year':Year,'Departure_Hour':Departure_Hour,'Departure_Minute':Departure_Minute,'Arrival_Hour':Arrival_Hour,'Arrival_Minute':Arrival_Minute,'Duration_Hour':Duration_Hour,'Duration_Minute':Duration_Minute}
         input_df = pd.DataFrame([input_dict])
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
