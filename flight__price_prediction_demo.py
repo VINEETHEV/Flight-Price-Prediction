@@ -48,7 +48,7 @@ def run():
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
             output = str(output)
-        st.success('The output is {}'.format(output))
+        st.success('The estimated price is {}'.format(output))
     if add_selectbox == 'Upload csv':
         file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
         if file_upload is not None:
